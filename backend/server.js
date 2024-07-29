@@ -1,16 +1,17 @@
-import express from 'express'
-import cors from 'cors'
+import express from 'express';
+import cors from 'cors';
 import { connectDB } from './config/db.js';
 import foodRouter from './routes/foodroute.js';
 import userRouter from './routes/userroute.js';
-import 'dotenv/config'
+import 'dotenv/config';
 import cartRouter from './routes/cartroute.js';
 import orderRouter from './routes/orderroute.js';
 
 
 // App config
-const app = express()
-const port = 4000;
+const app = express();
+const port = process.env.PORT || 4000;
+
 
 
 // Middleware
