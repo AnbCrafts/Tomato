@@ -12,7 +12,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 export default function App() {
-   const url = 'http://localhost:4000'
+   const url = 'https://tomato-backend-b8yf.onrender.com'
   return (
     <div>
       <ToastContainer/>
